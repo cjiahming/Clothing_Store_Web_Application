@@ -1,0 +1,173 @@
+.add-address-btn {
+    border: 1px solid #c96;
+    position: sticky;
+    margin-top: 7px;
+    left: 1800px;
+    border-color: #C49C25;
+    color: #c96;
+    transition: 0.4s;
+    background: transparent;
+}
+
+.add-address-btn:hover{
+    background-color: #c96;
+    color: white;
+}
+
+.customers-address-overlay {
+    margin-right: 900px;
+    margin-left: -800px;
+    margin-bottom: 1000px;
+    margin-top: -550px;
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 125%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+.customers-address-overlay.open {
+    display: flex;
+    animation: show-overlay 0.5s;
+}
+
+@keyframes show-overlay {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.address-editdelete-btn{
+    width: 100%;
+    text-align: right;
+}
+
+.address-editdelete-btn-inner{
+    display: inline-block;
+}
+
+.editAddressBtn{
+    background-color: transparent;
+    color: black;
+    margin: 5px;
+    border: transparent;
+    transition: 0.4s;
+}
+
+.deleteAddressBtn{
+    background-color: darkred;
+    color: white;
+    margin: 5px;
+    border: transparent;
+    transition: 0.4s;
+}
+
+.editAddressBtn:hover{
+    background-color: lightgrey;
+}
+
+.deleteAddressBtn:hover{
+    background-color: brown;
+}
+
+.customers-address {
+    margin-left:-400px;
+    padding: 50px 40px;
+    background: white;
+}
+
+.address-div-header {
+    position: relative;
+}
+
+.address-div-header h3 {
+    text-align: left;
+    text-transform: uppercase;
+    color: #4A4A4A;
+    padding-bottom: 7px;
+    border-bottom: 1px solid darkgrey;
+}
+
+.address-div-header i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    color: #000051;
+}
+
+::placeholder {
+    color:darkgrey;  
+}
+
+.address-div-body .customers-address-form input {
+    display: block;
+    padding: 10px;
+    margin-bottom: 18px;
+    outline: none;
+    color: #000051;
+    transition: 0.4s;
+    width: 404px;
+    height: 38px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+}
+
+.address-div-body .customers-address-form .sameline input{
+    margin-top: 18px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    display: inline;
+}
+
+.address-div-body .customers-address-form input:focus {
+    border-color: grey;
+}
+
+.address-add-footer {
+    position: relative;
+    height: 10px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.address-add-footer button {
+    padding: 10px;
+    min-width: 120px;
+    background: #000051;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.address-add-footer .cancelbtn{
+    color: #161616;
+    background-color: white;
+    margin-left: 160px;
+}
+
+.address-add-footer .savebtn{
+    background-color: goldenrod;
+}
+
+
+.address-add-footer .cancelbtn:hover {
+    background: lightgrey;
+}
+
+.address-add-footer .savebtn:hover {
+    background: gold;
+}
+
+
+
+
+

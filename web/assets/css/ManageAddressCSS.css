@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.btn {
+    position: absolute;
+    left: 90%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+.overlay {
+    position: fixed;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+.overlay.open {
+    display: flex;
+    animation: show-overlay 0.5s;
+}
+
+@keyframes show-overlay {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.login {
+    padding: 50px 25px;
+    margin: 120px 50px 30px 450px;
+    width: 40%;
+    background: white;
+}
+
+.header {
+    position: relative;
+}
+
+.header h3 {
+    text-align: left;
+    text-transform: uppercase;
+    color: #4A4A4A;
+    padding-bottom: 7px;
+    border-bottom: 1px solid darkgrey;
+}
+
+.header i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    color: #000051;
+}
+
+::placeholder {
+    color:darkgrey;  
+}
+
+.body .form input {
+    display: block;
+    padding: 10px;
+    margin-bottom: 18px;
+    outline: none;
+    color: #000051;
+    transition: 0.4s;
+    width: 565px;
+    height: 38px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+}
+
+.body .form .sameline input{
+    margin-top: 18px;
+    width: 280px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    display: inline;
+}
+
+.body .form input:focus {
+    border-color: grey;
+}
+
+.footer {
+    position: relative;
+    height: 10px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.footer button {
+    padding: 10px;
+    min-width: 120px;
+    background: #000051;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.footer .cancelbtn{
+    color: #161616;
+    background-color: white;
+    margin-left: 320px;
+}
+
+.footer .savebtn{
+    background-color: goldenrod;
+}
+
+
+.footer .cancelbtn:hover {
+    background: lightgrey;
+}
+
+.footer .savebtn:hover {
+    background: gold;
+}
+
+
+
+
+

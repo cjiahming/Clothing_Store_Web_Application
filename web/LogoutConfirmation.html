@@ -1,0 +1,88 @@
+<!-- 
+    Document   : LogoutConfirmation-adminView.html
+    Created on : Apr 6, 2022, 2:06:00 PM
+    Author     : Choong Jiah Ming, Cheng Ling Ern
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+        <script type = "text/javascript" >
+            function preventBack() {
+                window.history.forward();
+            }
+            setTimeout("preventBack()", 0);
+            window.onunload = function () {
+                null;
+            };
+        </script> 
+        <style>
+            body{
+                background-color: #F2F2F2;
+            }
+            /* CSS */
+            .button-73 {
+                appearance: none;
+                background-color: #FFFFFF;
+                border-radius: 40em;
+                border-style: none;
+                box-shadow: #ADCFFF 0 -12px 6px inset;
+                box-sizing: border-box;
+                color: #000000;
+                cursor: pointer;
+                display: inline-block;
+                font-family: -apple-system,sans-serif;
+                font-size: 8px;
+                font-weight: 500;
+                letter-spacing: -.24px;
+                margin: 0;
+                outline: none;
+                quotes: auto;
+                text-align: center;
+                text-decoration: none;
+                transition: all .15s;
+                user-select: none;
+                -webkit-user-select: none;
+                touch-action: manipulation;
+            }
+
+            .button-73:hover {
+                background-color: #FFC229;
+                box-shadow: #FF6314 0 -6px 8px inset;
+                transform: scale(1.125);
+            }
+
+            .button-73:active {
+                transform: scale(1.025);
+            }
+
+            @media (min-width: 768px) {
+                .button-73 {
+                    font-size: 15px;
+                    padding: .75rem 2rem;
+                }
+            }
+
+            .alias {
+                cursor: pointer;
+                padding-left: 2%;
+                border: none;
+                background: none;
+                color: brown;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <img src="assets/logout.svg" style="height:550px;display: block; margin-left: 15%;margin-top:3%; float: left;"> 
+            <p style="padding-top:10%;font-size:22px"><span style="font-size:72px;"><b>See You...</b></span><br/>
+                We have detected a logout request. Are you leaving?
+            </p><br/><br/>
+            <a href="LogOutController"><button class="button-73" role="button" type="submit">Yes, I'm leaving</button></a>
+            <br/><br/><button class="alias" onclick="history.back()"><u>No, I'm staying.</u></button>
+        </div>
+    </body>
+</html>
+

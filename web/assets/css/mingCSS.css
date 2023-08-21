@@ -1,0 +1,59 @@
+.header-userprofile{
+    width: 200px;
+    width:850px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+h3{
+    text-align: left;
+    color: #4A4A4A;
+    padding-bottom: 7px;
+    border-bottom: 1px solid darkgrey;
+}
+
+.customer-editprofile-div{
+    margin-top: 100px;
+    margin-left: 300px;
+    width: 900px;
+    border: 1px solid black;
+}
+
+.customer-editprofile-innerdiv{
+    margin-top: 20px;
+    margin-left: 50px;
+    border: 1px solid blue;
+}
+
+.customer-editprofile-inputbox{
+    width: 500px;
+    border: 1px solid grey;
+    outline: none;
+    color: #000051;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    transition: 0.4s;
+}
+
+.customer-editprofile-inputbox:focus{
+    border-color: grey;
+}
+
+.userprofile-radiobox{
+    margin-left: 10px;
+}
+
+.customer-save-password{
+    border: 1px solid goldenrod;
+    border-color: #c96;
+    color: #c96;
+    transition: 0.4s;
+    background: transparent;
+    display: inline-block;
+    padding: 4px 20px;
+}
+
+.customer-save-password:hover{
+    background-color: #c96;
+    color: white;
+}
